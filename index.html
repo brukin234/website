@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VC Solutions</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem 2rem;
+            background-color: #333;
+        }
+
+        header .logo {
+            color: #fff;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0 1rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            height: 60vh;
+            background: url('your-image.jpg') no-repeat center center/cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+            padding: 0 2rem;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+        }
+
+        .hero p {
+            font-size: 24px;
+        }
+
+        .hero button {
+            background-color: #333;
+            color: #fff;
+            font-size: 18px;
+            padding: 0.5rem 2rem;
+            border: none;
+            cursor: pointer;
+            margin-top: 1rem;
+        }
+
+        .hero button:hover {
+            background-color: #555;
+        }
+
+.about-us {
+  background-color: #f2f2f2;
+  padding: 50px;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.about-us:before {
+  background-color: #333;
+  content: "";
+  height: 50px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 50px;
+}
+
+.about-us h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contact-us {
+  background-color: #f2f2f2;
+  padding: 50px;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.contact-us:before {
+  background-color: #333;
+  content: "";
+  height: 50px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 50px;
+}
+
+.contact-us h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
+
+
+        .contact-us form label,
+        .contact-us form input,
+        .contact-us form textarea {
+            display: block;
+            margin-bottom: 1rem;
+            width: 100%;
+        }
+
+        .contact-us form button {
+            background-color: #333;
+            color: #fff;
+            font-size: 18px;
+            padding: 0.5rem 2rem;
+            border: none;
+            cursor: pointer;
+        }
+
+        .contact-us form button:hover {
+            background-color: #555;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        footer nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0 1rem;
+        }
+
+        footer nav a:hover {
+            text-decoration: underline;
+        }
+			.product-list {
+		padding: 2rem;
+	}
+
+	.products {
+		padding: 2rem;
+		text-align: center;
+	}
+
+	.product-list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 1rem;
+	}
+
+	.product {
+		background-color: #f2f2f2;
+		padding: 1rem;
+		border: 1px solid #ccc;
+		width: calc(33.333% - 1rem);
+		box-sizing: border-box;
+		text-align: center;
+		font-size: 18px;
+	}
+
+	/* Responsive styles */
+	@media screen and (max-width: 768px) {
+		.product {
+			width: calc(50% - 1rem);
+		}
+	}
+
+	@media screen and (max-width: 480px) {
+		.product {
+			width: 100%;
+		}
+	}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Vitollo Cybersecurity Solutions</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+        </nav>
+    </header>
+<section class="products">
+    <h2>Our Services</h2>
+    <div class="product-list">
+        <div class="product">Threat Hunting: Proactive monitoring of systems and networks to identify and mitigate potential cyber threats.</div>
+        <div class="product">Vulnerability Assessment: Identification and analysis of potential vulnerabilities in a client's network or systems.</div>
+        <div class="product">Malware Analysis: In-depth analysis of malware to determine its origin, behavior, and potential impact.</div>
+        <div class="product">Risk Assessment: Analysis of potential risks to a client's network or systems and development of a plan to mitigate those risks.</div>
+        <div class="product">Security Awareness Training: Training for employees on best practices for protecting sensitive data and avoiding cyber threats.</div>
+        <div class="product">Network Security: Protection of a client's network infrastructure from cyber threats.</div>
+    </div>
+</section>
+
+    <section class="about-us">
+        <h2>About Us</h2>
+<p>We are dedicated to providing world-class cybersecurity threat hunting and virus detection services. With years of experience in the industry, our team of experts has honed their skills in identifying and mitigating the latest threats to ensure the safety and security of our clients' networks.
+
+Our mission is to stay ahead of the curve when it comes to cybersecurity threats. We understand that viruses and other malicious software are constantly evolving, and we strive to stay up-to-date with the latest developments in the field to ensure that our clients are protected at all times.
+
+We work tirelessly to identify and neutralize threats before they can cause any damage, and we pride ourselves on our ability to quickly and efficiently respond to any incidents that do occur.
+
+We understand that cybersecurity is not a one-size-fits-all solution, which is why we take a customized approach to each of our clients. We take the time to understand their unique needs and tailor our services accordingly. This allows us to provide the most effective solutions possible and ensure that our clients are getting the best possible value for their investment.
+
+We work closely with our clients to ensure that they understand the risks and are equipped with the knowledge and tools necessary to protect themselves.
+
+We are passionate about what we do, and we take pride in the fact that we are helping to keep our clients safe from the ever-growing threat of cybercrime. If you are looking for a partner who is dedicated to your safety and security, look no further than us.
+</p>
+</section>
+<section class="contact-us">
+    <h2>Contact Us</h2>
+<form method="post" action="send_email.php">
+  <label for="name">Name</label>
+  <input type="text" name="name" id="name" required>
+
+  <label for="email">Email</label>
+  <input type="email" name="email" id="email" required>
+
+  <label for="subject">Subject</label>
+  <input type="text" name="subject" id="subject" required>
+
+  <label for="message">Message</label>
+  <textarea name="message" id="message" required></textarea>
+
+  <button type="submit">Send Message</button>
+</form>
+</section>
+<footer>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact Us</a>
+    </nav>
+    <p>&copy; 2023 Vitollo Cybersecurity Solutions. All rights reserved.</p>
+</footer>
+</body>
+</html>
+
+   
